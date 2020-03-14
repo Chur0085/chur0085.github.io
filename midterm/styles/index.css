@@ -1,0 +1,291 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* My CSS start */
+
+body {
+    font-family: "Raleway";
+    margin: 0;
+    text-align: left;
+    color: #3C3B3A;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #3C3B3A;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 2em;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+nav img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 3em;
+}
+
+h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p {
+    font-size: 1.7em;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 2em;
+}
+
+/* sport icons */
+
+.home-icons-1 img {
+    width: 25%;
+    margin-left: 75px;
+}
+
+.home-icons-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px;
+}
+
+.home-icons-2 img {
+    width: 25%;
+    margin-left: 75px;
+}
+
+.home-icons-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px;
+}
+
+.activities-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px;
+}
+
+.activities-1 p {
+    font-size: 1.5em;
+    color: #26A682;
+}
+.activities-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px;
+}
+
+.activities-2 p {
+    font-size: 1.5em;
+    color: #26A682;
+}
+
+.btn-get-started {
+    background-color: #26A682;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 75px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    list-style: none;
+    box-shadow: 5px 10px 5px rgb(174, 174, 174);
+}
+
+.btn-get-started li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+.books {
+    padding: 40px;
+    margin: auto;
+}
+
+.discover h2 {
+    margin-left: 40px;
+    color: #26A682;
+    font-weight: lighter;
+    font-size: 2em;
+}
+ .discover h1 {
+     font-style: italic;
+     font-weight: normal;
+ }
+
+ .discover p {
+     font-weight: lighter;
+     font-size: 1.5em;
+ }
+
+ .btn-learn-more {
+    background-color: #26A682;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 75px;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 30px;
+    list-style: none;
+    box-shadow: 5px 10px 5px rgb(174, 174, 174);
+}
+
+.btn-learn-more li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+.simon {
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+    padding-top: 50px;
+}
+.simon img {
+    border-radius: 50%;
+    border: solid #F2F2F2 10px;
+}
+
+.simon h1 {
+    text-align: center;
+}
+
+.simon p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding: 0px 0px 100px 0px;
+}
+
+.entertainment h1  {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.entertainment h2 {
+    color: #26A682;
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.entertainment p {
+    font-weight: lighter;
+}
+
+.btn-learn-more-2 {
+    background-color: #26A682;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 75px;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 30px;
+    list-style: none;
+    box-shadow: 5px 10px 5px rgb(174, 174, 174);
+}
+
+.btn-learn-more-2 li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;  
+}
+
+footer {
+    background-color :#3C3B3A;
+    color: #f2f2f2;
+}
+
+footer img {
+    width: 50%;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 3em;
+}
+
+.top-button {
+    margin-left: auto;
+    width: 75px;
+    text-align: center;
+}
+
+
+@media (min-width: 760px){
+    header nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}
+
+
+@media (min-width: 1260px){
+    body {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
