@@ -1,0 +1,189 @@
+/**********************************************
+ * STARTER CODE
+ **********************************************/
+.shapes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-red, .circle-blue, .circle-green, .circle-purple, .circle-orange {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+/**********************************************
+ * YOUR CODE BELOW
+ **********************************************/
+.square-red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.circle-red {
+  border-radius: 50%;
+  background-color: red;
+}
+
+.pentagon-red {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: red transparent;
+}
+
+.pentagon-red::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+
+.square-blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.circle-blue {
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.pentagon-blue {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: blue transparent;
+}
+
+.pentagon-blue::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent blue;
+}
+
+.square-green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.circle-green {
+  border-radius: 50%;
+  background-color: green;
+}
+
+.pentagon-green {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: green transparent;
+}
+
+.pentagon-green::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent green;
+}
+
+.square-purple {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.circle-purple {
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.pentagon-purple {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: purple transparent;
+}
+
+.pentagon-purple::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent purple;
+}
+
+.square-orange {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.circle-orange {
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.pentagon-orange {
+  position: relative;
+  width: 54px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: orange transparent;
+}
+
+.pentagon-orange::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent orange;
+}
+/*# sourceMappingURL=style.css.map */
