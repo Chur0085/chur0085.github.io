@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+  
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+    
+  }
+  
+  header {
+    background: white;
+    color: white;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:999;
+    padding:1em; 
+    border-bottom: solid 1px #EA4933;
+  }
+  
+  nav {  
+    position: absolute;
+    top:100%;
+    left:0;
+    text-align:left;
+    background: black;
+    color: white;
+    width:100%;
+    transform: scale(1,0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: top; 
+    padding: 30px; 
+  }
+  
+  nav ul {
+    list-style-type: none;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out; 
+  }
+  
+  
+  nav li {
+    margin-bottom:1em;
+    margin-left:1em;
+  }
+  
+  
+  nav a {
+    color: white;
+    text-decoration:none;
+    font-size:1em;
+    text-transform: uppercase;
+  }
+  
+  
+  nav a:hover {
+      color: #67DADB;
+  }
+  
+  
+  .nav-toggle {
+      display:none;
+  }
+  
+  
+  .nav-toggle:checked ~ nav {
+    transform: scale(1,1); 
+  }
+  
+  
+  .nav-toggle:checked ~ nav ul {
+    opacity:1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+  
+  .nav-toggle-label{   
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left:1em;
+    height:100%;
+    display:flex;
+    align-items:center;   
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{ 
+    display:block;
+    background: black;
+    width:2em;
+    height:2px;
+    border-radius:2px;
+    position:relative;
+  }
+  
+  
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+         content:'';
+         position:absolute;
+  }
+  
+  .nav-toggle-label span::before{
+         bottom:7px;
+  }
+  
+  .nav-toggle-label span::after{
+         top:7px;
+  }
+  
+  
+    .nav-img {
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      padding: 20px;
+    }
+  
+    .home-img  {
+      width: 450px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+    }
+
+    .contact-img  {
+      padding-top: 400px; 
+      width: 450px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;  
+  }
+  
+    h1, h2 {
+      text-align: center;
+      padding: 5px;
+    }
+
+    h1 {
+      padding-top: 10px;
+    }
+
+    .contact-form {
+      margin: 20%;
+    }
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #EA4933;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    
+
+  footer {
+    background-color:black;
+    color: #f2f2f2;
+    border: 1px solid #EA4933;
+    
+}
+
+footer img {
+    width: 40px;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+footer p {
+    text-align: left;
+    padding: 15px;
+    font-size: 1em;
+}
+
+
+
+/* I wanted to remove the hamburger menu and display the pages underneath the logo but it wouldn't work */
+
+
+/* @media (min-width: 600px) { */
+
+    /* nav { 
+      width:100%; 
+      border-bottom: 1px solid #EA4933;  
+      padding: .6em 0; 
+    }
+    
+    nav ul { 
+      list-style: none; 
+      padding: 0px; 
+      margin: 0px; 
+      font-weight: bold; 
+      text-align: center; 
+    }
+    
+    nav ul li { 
+      display: inline-block; 
+      text-align: left;
+      padding: 20px;
+    }
+    
+    nav ul li a { 
+      display: block; 
+      padding: 5px 10px; 
+      text-decoration: none; 
+      color: black; 
+    }
+    
+    nav ul li a:hover {
+      color: #EA4933; 
+   }
+  
+
+
+   .nav-toggle-label{   
+    display: none;   
+  }
+
+  .nav-toggle {
+    display:none;
+}
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{ 
+    display: none;
+  }
+} */ 
